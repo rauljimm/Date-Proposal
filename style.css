@@ -1,0 +1,111 @@
+/* Reset básico */
+/* Fondo de la pantalla */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('media/background.jpg'); /* Ruta de la imagen */
+    background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    font-family: Arial, sans-serif;
+}
+
+
+/* Contenedor de la pregunta */
+.container-question {
+    position: relative; /* Hace que el gif pueda posicionarse sobre él */
+    text-align: center;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: -50px; /* Ajusta para que Courage parezca salir de aquí */
+}
+
+/* Título */
+h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #d32f2f;
+}
+
+/* Texto de respuesta */
+.answer {
+    font-size: 18px;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Contenedor de botones */
+.answerBtns {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+    /* Botones */
+.yesBtn, .noBtn {
+    background-color: #e57373;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.yesBtn:hover, .noBtn:hover {
+    background-color: #c62828;
+}
+
+
+/* GIF de Courage con animación de subida */
+#shaking-courage {
+    position: absolute;
+    top: 300px; /* Empieza más abajo */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 250px;
+    z-index: 0; /* Oculto detrás del contenedor */
+    opacity: 0; /* Oculto al inicio */
+    animation: subirCourage 1.5s ease-out forwards;
+}
+
+/* Definimos la animación */
+@keyframes subirCourage {
+    0% {
+        top: 350px; /* Más abajo */
+        opacity: 0;
+    }
+    100% {
+        top: 200px; /* Llega a su posición final */
+        opacity: 1;
+    }
+}
+
+
+#joking-courage {
+    display: none;
+    position: absolute;
+    top: 100px; /* Ajusta según el tamaño del gif */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 250px; /* Ajusta según el tamaño que quieras */
+    z-index: 0; /* Hace que esté sobre el contenedor */
+}
+
+#milk-mocha {
+    display: none;
+    position: absolute;
+    top: 100px; /* Ajusta según el tamaño del gif */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 250px; /* Ajusta según el tamaño que quieras */
+    z-index: 0; /* Hace que esté sobre el contenedor */
+}
