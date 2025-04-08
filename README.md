@@ -49,7 +49,7 @@ An interactive web page designed to surprise and delight your loved one on Valen
 - `index.html`: Main file containing the page structure.
 - `style.css`: Stylesheet for design and visual presentation.
 - `script.js`: JavaScript file handling interactivity and user actions responses.
-- `assets/`: Folder containing images and other multimedia resources used on the page.
+- `media/`: Folder containing images and other multimedia resources used on the page.
 
 ---
 
