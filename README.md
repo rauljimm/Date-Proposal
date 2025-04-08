@@ -1,6 +1,6 @@
-# 💖 Will You Be My Valentine? (WYBMV)
+# 💖 Will You Be My Valentine? 
 
-**WYBMV** es una página web interactiva diseñada para sorprender y deleitar a tu ser querido en el Día de San Valentín. Presenta una pregunta especial acompañada de una experiencia encantadora y lúdica. 💘
+Es una página web interactiva diseñada para sorprender y deleitar a tu ser querido en el Día de San Valentín. Presenta una pregunta especial acompañada de una experiencia encantadora y lúdica. 💘
 
 ---
 
